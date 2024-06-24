@@ -1,0 +1,388 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+/*----- NAV BAR -----*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 30px 10px;
+    font-family: "Karla", sans-serif;
+    font-weight: 800;
+    font-size: x-large;
+}
+
+nav{
+    display: flex;
+    height: 20px;
+    
+}
+
+nav a{
+    display: flex;
+    font-size: 18px;
+    color: #9A9C9F;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0 15px;
+    transition: .4s;
+    
+}
+
+nav a:hover,
+nav a.active {
+    color:#687A6D;
+    transform: scale(1.1);
+}
+
+
+
+
+/*----- SECTIONS -----*/
+section {
+    min-height: 100vh;
+    display: flex;
+    background: #8b9393;
+    color: #fff;
+    flex-direction: column;
+    align-items: center;
+    padding-top:2pc;
+    
+}
+
+section:nth-child(odd){
+    background-color: #848e90;
+}
+
+
+/*----- HOME SECTION -----*/
+
+
+#home{
+    background-image: url(images/backround.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+#home h1{
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    text-align: center;
+}
+
+#home h2{
+    font-family: "Spectral", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*----- ABOUT SECTION -----*/
+
+
+#about h3{
+    color:#687A6D;
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 85px;
+    padding-bottom: 5px;
+}
+
+#about h1{
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.intro_wrap{
+    padding: 40px 25% 4%;
+    display: flex;
+    flex-direction:row
+
+}
+
+#about p{
+    padding-top: 10px;
+    padding-left: 40px;
+    display: flex;
+    font-family: "Spectral", serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 17px;
+}
+
+.pfp_img{
+    
+    max-width: 180px;
+    max-height: 180px;
+    flex-direction: column;
+    object-fit: cover;
+    display: grid;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+    outline: 4px solid #687A6D;
+    transition: 0.3s ease;
+}
+
+.pfp_img:hover{
+    transform: scale(1.1);
+    
+}
+
+/*----- SKILLS SECTION -----*/
+
+#skills h3{
+    color:#687A6D;
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 85px;
+    padding-bottom: 5px;
+}
+
+
+.resume_wrapper{
+    text-align: center;
+    display:grid;
+}
+.resume_wrapper i{
+    font-size: 40px;
+}
+.resume_wrapper h2{
+    font-size: 20px;
+}
+
+
+/*----- PROJECTS SECTION -----*/
+
+#projects h3{
+    color:#687A6D;
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 85px;
+    padding-bottom: 5px;
+}
+
+
+/*----- CONTACT SECTION -----*/
+
+#contact{
+    min-height: 50vh;
+}
+#contact h3{
+    color:#687A6D;
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 85px;
+    padding-bottom: 5px;
+}
+#contact h1{
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   
+}
+
+
+
+#contact_row_2{
+    
+    padding:20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+
+
+
+.email_wrapper{
+    text-align: center;
+    display:grid; 
+}
+.email_wrapper i{
+    font-size: 60px;
+}
+.email_wrapper h2{
+    font-size: 20px;
+}
+.email_wrapper a{
+    font-size: 17px;
+    text-decoration: none;
+}
+
+
+
+
+
+
+.icon_wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.icon_wrapper a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #333; /* Adjust color as needed */
+    font-size: 24px; /* Adjust size as needed */
+}
+
+.icon_wrapper a:hover {
+    color: #007bff; /* Change color on hover as needed */
+}
+
+/*test*/
+
+
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+
+
+
+/*----- RESPONSIVE SIZING -----*/
+
+@media (max-width: 960px) {
+    .intro_wrap{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-top: 20px;
+    }
+    
+
+
+}
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+        flex-direction: row;
+    }
+
+    nav {
+        flex-direction:row;
+        align-items: center;
+    }
+
+    nav a {
+        padding: 10px 15px;
+    }
+    
+    #home {
+        min-height: 70vh;
+    }
+
+    .intro_wrap{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about p{
+        padding:2%;
+        text-align: center;
+    }
+
+    .pfp_img{
+        
+        max-width: 150px;
+        max-height: 150px;
+        
+    }
+
+    
+}
+
+
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+        font-size: large;
+        
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 8px 5px;
+    }
+
+    #home h1 {
+        font-size: 40px;
+    }
+
+    #home h2 {
+        font-size: 18px;
+    }
+
+    
+}
