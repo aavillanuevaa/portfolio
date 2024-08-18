@@ -56,11 +56,12 @@ nav a.active {
 section {
     min-height: 20vh;
     display: flex;
-    background: #bbbbbb;
+    background: #cfccc7;
     color: #fff;
     flex-direction: column;
     align-items: center;
     padding-top:2pc;
+    padding-bottom: 2pc;
     
 }
 
@@ -104,6 +105,8 @@ section {
 #about{
     background-color:#475540;
 }
+
+
 #about h3{
     color: #E4F0D0;
     font-family: "Karla", sans-serif;
@@ -164,15 +167,21 @@ section {
 
 .pfp_img:hover{
     transform: scale(1.1);
-    
+}
+
+hr{
+    width: 50rem;
 }
 
 /*----- SKILLS SECTION -----*/
 
+#skills{
+    min-height: 50vh;
+}
 
 
 #skills h3{
-    color: #8299b2;
+    color:#475540;
     font-family: "Karla", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -206,8 +215,12 @@ section {
 
 /*----- PROJECTS SECTION -----*/
 
+#projects{
+    min-height: 50vh;
+}
+
 #projects h3{
-    color:#687A6D;
+    color:#475540;
     font-family: "Karla", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -224,10 +237,11 @@ section {
 /*----- CONTACT SECTION -----*/
 
 #contact{
-    min-height: 50vh;
+    min-height: 10vh;
+    background-color: #8299b2;
 }
 #contact h3{
-    color:#687A6D;
+    color:#4C667D;
     font-family: "Karla", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -236,7 +250,7 @@ section {
     text-align: center;
     align-items: center;
     justify-content: center;
-    padding-top: 85px;
+    padding-top: 50px;
     padding-bottom: 5px;
 }
 #contact h1{
@@ -254,7 +268,6 @@ section {
 
 
 #contact_row_2{
-    
     padding:20px;
     display: flex;
     flex-direction: row;
@@ -268,34 +281,29 @@ section {
 
 
 .email_wrapper{
+    font-family: "Spectral", serif;
     text-align: center;
     display:grid; 
 }
 .email_wrapper i{
     font-size: 60px;
 }
-.email_wrapper h2{
-    font-size: 20px;
-    font-family: "Karla", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 700;
-    font-style: normal;
-}
 .email_wrapper a{
+    font-family: "Spectral", serif;
     font-size: 17px;
     padding-top: 2px;
     text-decoration: none;
-    color: inherit;
+    color: #fff;
 }
-
-
-
-
+.email_wrapper a:hover {
+    color: #333; /* Change color on hover as needed */
+}
 
 
 .icon_wrapper {
     display: flex;
     justify-content: center;
+    padding-top: 10px;
 }
 
 .icon_wrapper a {
@@ -306,19 +314,35 @@ section {
 }
 
 .icon_wrapper a:hover {
-    color: #007bff; /* Change color on hover as needed */
+    color: #ffffff; /* Change color on hover as needed */
+}
+
+footer p{
+    padding-bottom: 5px;
+    align-self: center;
+}
+
+#line{
+   height: 3px;
+   background-color: white;
+   margin: 0 auto;
+   width: 85%;
 }
 
 
 
 
 footer {
-    background-color: #f1f1f1;
-    text-align: center;
-    padding: 20px;
-    position: relative;
+    justify-content: center;
+    background-color: #4C667D;
+    text-align: center;;
+    padding: 15px;
     bottom: 0;
     width: 100%;
+    font-family: "Karla", sans-serif;
+    color: #333;
+    align-items: center;
+    position:relative;
 }
 
 
