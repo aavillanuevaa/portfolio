@@ -56,7 +56,7 @@ nav a.active {
 section {
     min-height: 20vh;
     display: flex;
-    background: #cfccc7;
+    background: #D6D2CC;
     color: #fff;
     flex-direction: column;
     align-items: center;
@@ -176,7 +176,7 @@ hr{
 /*----- SKILLS SECTION -----*/
 
 #skills{
-    min-height: 50vh;
+    min-height: 80vh;
 }
 
 
@@ -215,8 +215,12 @@ hr{
 
 /*----- PROJECTS SECTION -----*/
 
+
+
+
 #projects{
-    min-height: 50vh;
+    min-height: 100vh;
+   
 }
 
 #projects h3{
@@ -233,6 +237,124 @@ hr{
     padding-bottom: 5px;
 }
 
+#projects h1{
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color:#FFFCF7;
+    padding-bottom: 20px;
+}
+
+#projects_wrap{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#project{
+    display:flex;
+    padding:10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#project_desc{
+    align-items: center;
+    display: grid;
+}
+
+
+#project h1{
+    color:#FFFCF7;
+    padding-top: 40px;
+    text-align: center;
+    font-family: "Karla", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 26px;
+    
+}
+#project p{
+    padding-top: 15px;
+    width:40vw;
+    padding-left: 40px;
+    font-family: "Spectral", serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 19px;
+    padding-bottom: 5px;
+
+}
+
+.link_container{
+    text-align: center;
+}
+
+
+.link_container :hover{
+    color: #FFFCF7;
+    transform: scale(1.1);
+}
+
+.project_link{
+    display: inline-block;
+    text-align: center;
+    font-family: "Karla", sans-serif;
+    text-decoration: none;
+    color:#475540;
+    font-size: 20px;
+    padding-bottom: 30px;
+    transition: 0.4s;
+}
+
+.icon_project_wrapper{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    transition: 0.3s;
+}
+
+.icon_project_wrapper :hover{
+    color:#475540;
+    transform: scale(1.03);
+}
+
+.icon_project_wrapper i{
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 40px;
+    color:#FFFCF7;
+    padding-top:5px;
+}
+
+
+
+
+.project_img{
+    max-width: 300px;
+    max-height: 300px;
+    transition: 0.5s ease-out;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #475540;
+}
+
+.project_img:hover{
+    transform: scale(1.03);
+}
+
+#line2{
+    height: 3px;
+    background-color: white;
+    margin: 0 auto;
+    width: 85%;
+    border: none;
+    
+}
 
 /*----- CONTACT SECTION -----*/
 
@@ -296,25 +418,26 @@ hr{
     color: #fff;
 }
 .email_wrapper a:hover {
-    color: #333; /* Change color on hover as needed */
+    color: #333;
 }
 
 
 .icon_wrapper {
     display: flex;
     justify-content: center;
-    padding-top: 10px;
+    
 }
 
 .icon_wrapper a {
     display: inline-block;
     margin: 0 10px;
-    color: #333; /* Adjust color as needed */
-    font-size: 24px; /* Adjust size as needed */
+    color: #333;
+    font-size: 35px;
+    transition: 0.5s;
 }
 
 .icon_wrapper a:hover {
-    color: #ffffff; /* Change color on hover as needed */
+    color: #4C667D; 
 }
 
 footer p{
