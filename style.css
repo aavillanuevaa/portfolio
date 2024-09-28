@@ -134,11 +134,15 @@ section {
 }
 
 .intro_wrap{
-    padding: 40px 25% 4%;
+    padding: 40px 25% 0px;
     display: flex;
-    flex-direction:row
+    flex-direction:row;
+    align-items: center;
+
 
 }
+
+
 
 #about p{
     padding-top: 10px;
@@ -149,10 +153,11 @@ section {
     font-style: normal;
     font-size: 17px;
     color:#FFFCF7;
+    padding-bottom: 20px;
+    padding-right: 40px;
 }
 
 .pfp_img{
-    
     max-width: 180px;
     max-height: 180px;
     flex-direction: column;
@@ -161,7 +166,7 @@ section {
     border-radius: 50%;
     display: block;
     margin: 20px auto;
-    outline: 4px solid #FFFCF7;;
+    outline: 4px solid #FFFCF7;
     transition: 0.3s ease;
 }
 
@@ -171,6 +176,27 @@ section {
 
 hr{
     width: 50rem;
+}
+
+#link_wrap{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#link_wrap a{
+    text-underline-offset: 3px;
+    color:#FFFCF7;
+    padding-top:100px;
+    padding: 15px;
+    font-size: 20px;
+    font-family: "Karla", sans-serif;
+    transition: 0.3s;
+}
+
+#link_wrap a:hover{
+    color:#001400;
 }
 
 /*----- SKILLS SECTION -----*/
@@ -218,10 +244,7 @@ hr{
 
 
 
-#projects{
-    min-height: 100vh;
-   
-}
+
 
 #projects h3{
     color:#475540;
@@ -251,9 +274,10 @@ hr{
 }
 
 #projects_wrap{
-    display:grid;
+    display:flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 #project{
@@ -261,6 +285,7 @@ hr{
     padding:10px;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 #project_desc{
@@ -271,7 +296,7 @@ hr{
 
 #project h1{
     color:#FFFCF7;
-    padding-top: 40px;
+    
     text-align: center;
     font-family: "Karla", sans-serif;
     font-weight: 700;
@@ -279,17 +304,7 @@ hr{
     font-size: 26px;
     
 }
-#project p{
-    padding-top: 15px;
-    width:40vw;
-    padding-left: 40px;
-    font-family: "Spectral", serif;
-    font-weight: 100;
-    font-style: normal;
-    font-size: 19px;
-    padding-bottom: 5px;
 
-}
 
 .link_container{
     text-align: center;
@@ -329,7 +344,7 @@ hr{
     margin: 0 10px;
     font-size: 40px;
     color:#FFFCF7;
-    padding-top:5px;
+    padding-top:20px;
 }
 
 
